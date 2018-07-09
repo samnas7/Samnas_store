@@ -1,0 +1,112 @@
+body, .row{
+	margin:0px;
+	padding: 0px;
+}
+.row{
+  margin-right: 0px !important; 
+  margin-left: 0px !important; 
+  background: #444;
+  height: 65px;
+}
+#wrapper{
+	height: 100%;
+	width: 100%;
+}
+#sidebar-wrapper{
+	height: 100%;
+	background: #444;
+	position: absolute;
+    overflow-y:hidden;
+    z-index:6;
+	opacity: 60%;
+}
+.navbar-nav>li a:hover, .navbar-nav>li a:focus, .navbar-nav>li a{
+	color: #fff !important;
+    border: none;
+    background: none !important;/*
+    border-bottom:1px solid white;*/
+}
+#content-wrapper{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+#toggle-butn span.fa{
+	background: #444;
+	margin-top: 10px;
+
+}
+.mynav{
+	background: #444;
+}
+#wrapper.menu-display #sidebar-wrapper{
+    width: 15%;
+}
+#wrapper.menu-display #content-wrapper{
+    padding-left: 15%;
+}
+#wrapper.menu-display #sidebar-wrapper.shrink-width{
+    width: 3%;
+}
+#wrapper.menu-display #content-wrapper.shrink-padding{
+    padding-left: 3%;
+}
+@media only screen and (max-width: 500px){
+    #wrapper.menu-display #sidebar-wrapper{
+    	width: 30%;
+	}
+	#wrapper.menu-display #content-wrapper{
+	    padding-left: 30%;
+	}
+	#wrapper.menu-display #sidebar-wrapper.shrink-width{
+	    width: 7%;
+	}
+	#wrapper.menu-display #content-wrapper.shrink-padding{
+	    padding-left: 7%;
+	}
+}
+@media only screen and (orientation: portrait) {
+    #wrapper.menu-display #sidebar-wrapper{
+    	width: 40%;
+	}
+	#wrapper.menu-display #content-wrapper{
+	    padding-left: 40%;
+	}
+	#wrapper.menu-display #sidebar-wrapper.shrink-width{
+	    width: 8%;
+	}
+	#wrapper.menu-display #content-wrapper.shrink-padding{
+	    padding-left: 8%;
+	}
+}
+.sidebar-nav{
+	margin-top: 80px;
+	position: absolute;
+	padding-left: 0px;
+}.sidebar-nav li a {
+        font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 5px;
+}
+.menu-logo,.menu-name{
+	display: inline;
+}
+.menu-logo span,.menu-name span{
+	font-size: 1.3em;
+	padding-right: 15px;
+}
+.sidebar-list{
+	margin-bottom: 30px;
+}
+.sidebar-link{
+	color: #fff;
+}
+a.sidebar-link:hover{
+	color: #2a6496;
+	text-decoration: none;
+}
+.fa-rotate-180{
+	margin-left: 0px;
+	    padding-right: 0px !important;
+}
