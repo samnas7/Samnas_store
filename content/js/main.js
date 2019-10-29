@@ -121,7 +121,9 @@ function product(){
             method  : "POST",
             data    : $("form").serialize(),
             success : function(data){
-                        $("#sign_msg").html(data);
+                        $("#sign_msg").html(data);  
+                        if(data.includes("class='alert alert-success'"))
+                            console.log(data, data.includes("class='alert alert-success'"));
                       },
             fail    : function(data){
                         alert("error"+data);
